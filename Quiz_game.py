@@ -1,6 +1,7 @@
 print("Welcome to my Quiz game!")
 
-playing = input("Do you want to play? ")
+playing = input("Do you want to play? ").lower()
+score = 0
 
 # Condition
 if playing != 'yes':
@@ -8,19 +9,12 @@ if playing != 'yes':
 
 print("Okay! Let's play :)")
 
-# Question no.1
-answer = input("What does CPU stands for? ")
-
-if answer == 'Central Processing Unit':
-    print("Correct!")
-else:
-    print("Incorrect!")
-
 # Question 1
 answer = input("What does CPU stands for? ")
 
 if answer == 'Central Processing Unit':
     print("Correct!")
+    score += 1
 else:
     print("Incorrect!")
 
@@ -29,6 +23,7 @@ answer = input("What does GPU stands for? ")
 
 if answer == 'Graphic Processing Unit':
     print("Correct!")
+    score += 1
 else:
     print("Incorrect!")
 
@@ -37,20 +32,18 @@ answer = input("What does RAM stands for? ")
 
 if answer == 'Random Access Memory':
     print("Correct!")
+    score += 1
 else:
     print("Incorrect!")
 
-# Question
-answer = input("What does CPU stands for? ")
+# Question 4
+answer = input("What does PSU stands for? ")
 
-if answer == 'Central Processing Unit':
+if answer == 'Power Supply':
     print("Correct!")
+    score += 1
 else:
     print("Incorrect!")
 
-answer = input("What does CPU stands for? ")
-
-if answer == 'Central Processing Unit':
-    print("Correct!")
-else:
-    print("Incorrect!")
+# Print the result
+print("\nYour score is: ", score, "/4")

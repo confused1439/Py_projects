@@ -47,3 +47,5 @@ else:
 
 # Print the result
 print("\nYour score is: ", score, "/4")
+
+# -------End of the code-------
